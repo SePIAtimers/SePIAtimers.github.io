@@ -1,5 +1,8 @@
 ---
 layout: default
+
+title: Products
+summary: 既刊情報
 ---
 
 ## SePIA timers 2019 Winter
