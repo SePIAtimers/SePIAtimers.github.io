@@ -1,5 +1,8 @@
 ---
 layout: default
+
+title: Members
+summary: 紹介?
 ---
 
-# Member のページ
+## イカれたメンバーを紹介するぜ!
