@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: default
+header: top
+---
 
-  <head>
-    {%- include head.html -%}
-  </head>
-
-  <body>
-    {%- include header.html -%}
-
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">{{ site.title }}</h1>
-        <p class="lead">サークルのページです</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
-    {%- include footer.html -%}
-  </body>
-</html>
+{{ content }}

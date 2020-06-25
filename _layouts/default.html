@@ -8,16 +8,25 @@
   <body>
     {%- include header.html -%}
 
-    {%- include short_banner.html -%}
+    {% if layout.header == "top" %}
+      {%- include top_banner.html -%}
+    {% else %}
+      {%- include short_banner.html -%}
+    {% endif %}
 
     <div class="container py-2">
       <div class="row">
         <div class="col">
           {{ content }}
         </div>
+
+        <div class="col-3">
+          {%- include sidebar.html -%}
+        </div>
       </div>
     </div>
 
     {%- include footer.html -%}
+
   </body>
 </html>
