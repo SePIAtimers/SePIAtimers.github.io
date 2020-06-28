@@ -2,10 +2,8 @@
 layout: default
 
 title: Members
-summary: 紹介?
+summary: サークルを構成するメンバ一覧
 ---
-
-## イカれたメンバーを紹介するぜ!
 
 ### sgy
 サークル代表
