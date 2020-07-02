@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "ja" }}">
 
   <head>
     {%- include head.html -%}
@@ -20,9 +20,11 @@
           {{ content }}
         </div>
 
-        <div class="col-3">
-          {%- include sidebar.html -%}
-        </div>
+        {% if layout.header == "top" %}
+          <div class="col-md-3">
+            {%- include sidebar.html -%}
+          </div>
+        {% endif %}
       </div>
     </div>
 
