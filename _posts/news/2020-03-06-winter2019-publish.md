@@ -2,7 +2,7 @@
 layout: post
 title: SePIA timers 2019 Winter 発行
 category: news
-tag: book
+tags: book
 summary: TODO ここにサマリーを書く
 ---
 
