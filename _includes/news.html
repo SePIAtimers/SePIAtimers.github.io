@@ -1,0 +1,17 @@
+{% for post in site.categories.news %}
+<div>
+  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+  <p class="text-muted">
+    {{ post.date | date: "%Y %m %d" }}
+  </p>
+
+  <p>
+    {% if post.summary %}
+    {{ post.summary }}
+    {% else %}
+    {{ post.excerpt }}
+    {% endif %}
+  </p>
+  <hr>
+</div>
+{% endfor %}
