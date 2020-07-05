@@ -24,10 +24,4 @@ layout: top
 
 ### 最新情報
 
-Newsの最新を取る？
-
-<hr>
-
-### 遊び場
-
-Posts
+{% include top_news.html %}
