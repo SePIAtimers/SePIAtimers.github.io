@@ -2,6 +2,7 @@
 layout: post
 title: ブログサンプル
 category: blog
+tags: jekyll
 summary: さんぷる
 ---
 
