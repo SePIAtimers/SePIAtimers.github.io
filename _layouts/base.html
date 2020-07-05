@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ja" }}">
+
+  <head>
+    {%- include head.html -%}
+  </head>
+
+  <body style="padding-top:3.5rem;">
+    {%- include header.html -%}
+
+    {{ content }}
+
+    {%- include footer.html -%}
+
+  </body>
+</html>
