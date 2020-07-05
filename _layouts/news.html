@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% include short_banner.html %}
+
+<div class="container py-2">
+  <div class="row">
+    <div class="col">
+      {{ content }}
+    </div>
+
+    <div class="col-md-4">
+      <h3> タグ一覧 </h3>
+      {% for tag in site.tags %}
+
+      {% assign flag = false %}
+      {% for reserve_tag in site.data.news_tag %}
+      {% if reserve_tag.name == tag[0] %}
+      <p>{{ reserve_tag.title }} ({{ tag[1] | size }})</p>
+      {% assign flag = true %}
+      {% endif %}
+      {% endfor %}
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
