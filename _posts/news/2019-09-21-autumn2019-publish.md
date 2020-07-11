@@ -13,6 +13,6 @@ book-cover: 2019_autumn_cover.png
 テーマは絞らずに各々が書きたいことを収録しました．
 TODO ここもうちょっと文章ほしい
 
-- ESP32で動くプログラムの高速化 by sgy
-- Rustのスタックオーバーフローについて by こいきん
+- ESP32で動くプログラムの高速化 by こいきん
+- Rustのスタックオーバーフローについて by sgy
 - Mixed Precision Training の検証 by a_yoshii

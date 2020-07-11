@@ -13,5 +13,5 @@ book-cover: 2019_winter_cover.png
 今回もテーマは絞らずに各々が書きたいことを収録しました．
 TODO ここもうちょっと文章ほしい
 
-- RISC-V対応 リアルタイムOS解説（起動編）
-- PythonでBitcoin取引シミュレータ作ってみた
+- RISC-V対応 リアルタイムOS解説（起動編） by sgy
+- PythonでBitcoin取引シミュレータ作ってみた by a_yoshii
