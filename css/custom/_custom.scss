@@ -1,3 +1,15 @@
+body {
+    background: $light-sepia;
+}
+
+.navbar{
+    background: $dark-sepia;
+}
+
+.jumbotron {
+    background: $mid-sepia
+}
+
 .jumbotron-short{
     height: 18vh;
 }
