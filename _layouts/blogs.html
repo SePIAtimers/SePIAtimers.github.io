@@ -22,7 +22,12 @@ layout: base
       {% endfor %}
 
       {% if flag == false %}
-      <p>{{ tag[0] }} ({{ tag[1] | size }})</p>
+      <p><strong>{{ tag[0] }}</strong></p>
+      <ul>
+        {% for p in tag[1] %}
+        <li><a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+        {% endfor %}
+      </ul>
       {% endif %}
 
       {% endfor %}
