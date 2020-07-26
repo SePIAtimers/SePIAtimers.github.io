@@ -21,6 +21,13 @@ layout: top
 
 <hr>
 
+### 書籍情報
+
+- [SePIA timers 2019 Autumn]({{ site.baseurl }}{% post_url news/2019-09-21-autumn2019-publish %})
+- [SePIA timers 2019 Winter]({{ site.baseurl }}{% post_url news/2020-03-06-winter2019-publish %})
+
+<hr>
+
 ### 活動履歴
 
 - [技術書典 応援祭 2020/03/07~2020/04/05]({{ site.baseurl }}{% post_url news/2020-03-07-techbookfest8 %})
