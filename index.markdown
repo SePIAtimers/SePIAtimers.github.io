@@ -18,7 +18,7 @@ summary: 技術同人誌執筆サークル
 
 ### 最新情報
 
-{% include top_news.html %}
+{% include contents/top_news.html %}
 
 <hr>
 
