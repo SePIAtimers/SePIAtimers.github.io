@@ -8,6 +8,9 @@
 ├── css          # カスタマイズ用css置き場
 ├── _layouts     # 各ページのレイアウト定義ファイルを格納する
 ├── _includes    # headerやfooterなどのファイルを格納する
+│   ├── contents    # メインコンテンツのhtmlを格納
+│   ├── env         # head/foot など環境系のhtmlを格納
+│   └── parts       # navbarやjumbotronなどの大枠デザインのhtmlを格納
 ├── _posts       # 各記事を格納する
 ├── images       # 画像ファイル置き場
 ├── _data        # データ置き場？現状はタグの変換テーブル置き場
