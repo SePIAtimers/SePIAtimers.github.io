@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: top
+summary: 技術同人誌執筆サークル
 ---
 
 ### SePIA timers とは
