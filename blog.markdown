@@ -6,5 +6,5 @@ summary: TODO
 ---
 
 {% for post in site.categories.blog %}
-{% include post_list.html %}
+{% include contents/post_summary.html %}
 {% endfor %}
