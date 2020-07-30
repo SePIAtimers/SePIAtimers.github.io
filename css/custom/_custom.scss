@@ -1,0 +1,33 @@
+body {
+    background: $light-sepia;
+}
+
+.navbar{
+    background: $dark-sepia;
+}
+
+.jumbotron {
+    background: $mid-sepia
+}
+
+.jumbotron-short{
+    height: 18vh;
+}
+
+.jumbotron-container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.product{
+    border: 1px solid #000;
+}
+
+a:link, a:visited{
+    color: $dark-sepia;
+}
+
+.date{
+    color: $dark-sepia;
+}

@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+{% include parts/short_banner.html %}
+
+<div class="container py-2">
+  <div class="row">
+    <div class="col">
+      {{ content }}
+    </div>
+
+    <div class="col-md-4">
+      <h3> タグ一覧 </h3>
+      {% for tag in site.tags %}
+
+      {% for reserve_tag in site.data.news_tag %}
+      {% if reserve_tag.name == tag[0] %}
+      <p><strong>{{ reserve_tag.title }}</strong></p>
+      <ul>
+      {% for p in tag[1] %}
+        <li><a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
