@@ -6,12 +6,8 @@ layout: base
 
 <div class="container py-2">
   <div class="row">
-    <div class="col">
-      {{ content }}
-    </div>
-
-    <div class="col-md-4">
-      <h3> タグ一覧 </h3>
+    <div class="col-md-4 order-md-last">
+      <h3> タグ </h3>
       {% for tag in site.tags %}
 
       {% assign flag = false %}
@@ -31,7 +27,13 @@ layout: base
       {% endif %}
 
       {% endfor %}
+      <hr>
+    </div>
 
+    <div class="col">
+      <h3>記事</h3>
+      <hr>
+      {{ content }}
     </div>
   </div>
 </div>
