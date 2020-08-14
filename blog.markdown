@@ -2,7 +2,7 @@
 layout: blogs
 
 title: Blog
-summary: 技術ネタや技術に関係ないネタも合わせて投稿していきます
+summary: TODO
 ---
 
 {% for post in site.categories.blog %}
