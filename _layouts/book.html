@@ -5,18 +5,18 @@ layout: default
 <div id="post" class="container pt-3">
   <div class="row">
     <div class="col">
-      <h3>{{ page.book-title }}</h3>
       <p class="lead text-muted">
         {{ page.date | date: "%Y %m %d"}}
       </p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4 col-lg-3">
-      <img src="{{site.baseurl}}/images/{{ page.book-cover }}" class="product img-fluid">
+    <div class="col-sm-3">
+      <img src="{{site.baseurl}}/images/{{ page.book-cover }}" width="200" class="product">
     </div>
 
-    <div class="col-md-8 col-lg-9">
+    <div class="col-sm-9">
+      <h3>{{ page.book-title }}</h3>
       <p>{{ content }}</p>
     </div>
   </div>
