@@ -24,8 +24,9 @@ summary: 技術同人誌執筆サークル
 
 ### 書籍情報
 
-- [SePIA timers 2019 Autumn]({{ site.baseurl }}{% post_url news/2019-09-21-autumn2019-publish %})
+- [SePIA timers 2020 Summer]({{ site.baseurl }}{% post_url news/2020-09-10-summer2020-publish %})
 - [SePIA timers 2019 Winter]({{ site.baseurl }}{% post_url news/2020-03-06-winter2019-publish %})
+- [SePIA timers 2019 Autumn]({{ site.baseurl }}{% post_url news/2019-09-21-autumn2019-publish %})
 
 <hr>
 
