@@ -1,0 +1,16 @@
+<h4> タグ </h4>
+{% for tag in site.tags %}
+
+{% for reserve_tag in site.data.news_tag %}
+{% if reserve_tag.name == tag[0] %}
+<p><strong>{{ reserve_tag.title }}</strong></p>
+<ul>
+  {% for p in tag[1] %}
+  <li><a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
+
+{% endfor %}
+<hr>
