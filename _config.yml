@@ -1,4 +1,9 @@
 title: SePIA timers
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
 sass:
   sass_dir: css

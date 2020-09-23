@@ -2,6 +2,16 @@ body {
     background: $light-sepia;
 }
 
+blockquote {
+    background: $mid-sepia;
+    padding: 5px 20px;
+}
+
+.highlight {
+    padding: 5px 5px;
+    margin: 0;
+}
+
 .navbar{
     background: $dark-sepia;
 }
