@@ -11,9 +11,13 @@ layout: base
     </div>
 
     <div class="col">
-      <h3>記事</h3>
-      <hr>
-      {{ content }}
+      <h3>{{ page.title }}</h3>
+      <p class="lead text-muted">
+        Update: {{ page.date | date: "%Y %m %d"}}
+      </p>
+      <article>
+        {{ content }}
+      </article>
     </div>
   </div>
 </div>
