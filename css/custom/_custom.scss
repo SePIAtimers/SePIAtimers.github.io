@@ -11,9 +11,16 @@ blockquote {
     padding: 5px 20px;
 }
 
+.highlight pre {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0px;
+}
+
 .highlight {
     padding: 5px 5px;
-    margin: 0;
+    margin: 0px;
+    margin-bottom: 1em;
 }
 
 .navbar{
