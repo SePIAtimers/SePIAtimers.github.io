@@ -6,7 +6,10 @@
 <p><strong>{{ reserve_tag.title }}</strong></p>
 <ul>
   {% for p in tag[1] %}
-  <li><a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+  <li>
+    <a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a>
+    <p class="text-muted"> {{ p.date | date: "%Y %m %d"}} </p>
+  </li>
   {% endfor %}
 </ul>
 {% endif %}
