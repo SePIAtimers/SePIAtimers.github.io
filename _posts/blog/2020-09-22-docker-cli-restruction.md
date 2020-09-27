@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: blog_post
 title: DockerのCLIについて
 category: blog
 tags: Docker
 summary: DockerのCLIは再構成中のようです
-author: a-yoshii
+author: a_yoshii
 ---
 
 昨日の記事で似た操作を複数の方法で呼び出せることを確認しましたが，
@@ -80,4 +80,3 @@ Run 'docker COMMAND --help' for more information on a command.
 ```
 
 次回以降は各管理用のコマンドについて調べていこうと思います．
-
