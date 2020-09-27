@@ -1,16 +1,18 @@
 ---
-layout: post
-title: Dockerのコマンド，重複がある？
+layout: blog_post
+title: Dockerのサブコマンドを眺めてみる
 category: blog
 tags: Docker
 summary: Dockerのサブコマンド一覧を眺めて見る
-author: a-yoshii
+author: a_yoshii
 ---
 
-普段，環境の共有や管理を理由としてDockerを使うことは多いと思いますが，Dockerのサブコマンドを一通り把握されている方は多くないのではないでしょうか．
-私もそのうちの一人で，ふとDockerのサブコマンドを見てみると，想像より多数のコマンドがあることを知りました．
+普段，環境の共有や管理でDockerを利用することは多いと思いますが，イメージのビルド，コンテナの起動や停止といった基本的な操作がほとんどで，Dockerのサブコマンドを一通り把握されている方は多くないのではないでしょうか．
 
-```
+私も普段は基本的な操作のみだったのですが，ふとDockerのUsageを覗くと想像より多数のコマンドがあることを知りました．
+DockerのUsageを確認すると下記の結果が確認できます．
+
+```sh
 $ docker
 
 Usage:	docker [OPTIONS] COMMAND
@@ -19,20 +21,20 @@ A self-sufficient runtime for containers
 
 Options:
       --config string      Location of client config files (default
-                           "/Users/a-yoshii/.docker")
+                           "/Users/USERNAME/.docker")
   -c, --context string     Name of the context to use to connect to the daemon
                            (overrides DOCKER_HOST env var and default context set
                            with "docker context use")
 
-...
+  ...
 
--v, --version            Print version information and quit
+  -v, --version            Print version information and quit
 
 Management Commands:
   builder     Manage builds
   config      Manage Docker configs
 
-...
+  ...
 
   volume      Manage volumes
 
@@ -40,18 +42,21 @@ Commands:
   attach      Attach local standard input, output, and error streams to a running container
   build       Build an image from a Dockerfile
 
-...
+  ...
 
   wait        Block until one or more containers stop, then print their exit codes
 
 Run 'docker COMMAND --help' for more information on a command.
-
 ```
 
-Dockerにはサブコマンドが多数あることは知っていましたが，どうやら管理用のコマンド(Manage Commands)と通常のコマンド(Commands)は区別されているようです．
+Usageにはdockerコマンドのオプション，Management CommandsとCommandsが紹介されています．
+今回確認して初めて気づいたのですが，どうやら管理用のコマンド(Management Commands)と通常のコマンド(Commands)は区別されているようです．
+
+---
+
 試しに，管理用コマンドのbuilderを確認してみます．
 
-```
+```sh
 $ docker builder
 
 Usage:	docker builder COMMAND
@@ -66,9 +71,12 @@ Run 'docker builder COMMAND --help' for more information on a command.
 ```
 
 どうやら，builderコマンドはさらに次のコマンドを受け付けるようです．
+
+---
+
 試しにbuilder buildを確認してみます．
 
-```
+```sh
 $ docker builder build
 "docker builder build" requires exactly 1 argument.
 See 'docker builder build --help'.
@@ -81,7 +89,7 @@ Build an image from a Dockerfile
 この出力は見覚えがある方は多いのではないでしょうか．
 確認してみましょう．
 
-```
+```sh
 $ docker build
 "docker build" requires exactly 1 argument.
 See 'docker build --help'.
