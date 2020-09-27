@@ -12,7 +12,10 @@
 <p><strong>{{ tag[0] }}</strong></p>
 <ul>
   {% for p in tag[1] %}
-  <li><a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a></li>
+  <li>
+    <a href="{{ p.url | prepend: site.baseurl }}"> {{ p.title }} </a><br>
+    <p class="text-muted"> {{ p.date | date: "%Y %m %d"}} @{{ p.author }} </p>
+  </li>
   {% endfor %}
 </ul>
 {% endif %}
