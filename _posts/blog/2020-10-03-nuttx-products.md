@@ -10,7 +10,7 @@ author: sgy
 リアルタイムOSであるNuttXは様々な製品で使われています。
 その中からいくつか紹介したいと思います(会社名のアルファベット順)。
 
-### Fitbitのトラッカー
+#### Fitbitのトラッカー
 
 Fitbitは、アメリカのサンフランシスコに本社を持つウェアラブル製品などを作っている会社です。
 Googleが買収するという発表があり話題になりました。
@@ -24,11 +24,11 @@ NuttX Online Workshop Day 1で、FitbitのトラッカーにNuttXが使われて
 * Ace 2
 * Charge 4
 
-### Motorola Mobilityのmoto mods
+#### Motorola Mobilityのmoto mods
 
 [developer.motorola.com](https://developer.motorola.com)のFirmware Overviewによると、Moto Modファームウェアを構成するものはNuttXベースらしいです。
 
-### Sonyのオーディオ製品
+#### Sonyのオーディオ製品
 
 Embedded Linux Conferenceなどで、SonyのWALKMANやICレコーダーや集音器にNuttXが使われているという紹介がありました。
 発表資料内で、以下がNuttX使用製品として紹介されていました。
